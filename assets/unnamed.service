@@ -1,0 +1,11 @@
+[Unit]
+Description=unnamed
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /usr/bin/unnamed --configuration /etc/unnamed/unnamed.conf
+Restart=always
+RestartSec=0
+
+[Install]
+WantedBy=multi-user.target
